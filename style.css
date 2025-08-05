@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(-45deg, #6f4e37bd, #79481bcb, #A67C52, #dca7169b);
+  color: #e0ffe0;
+  font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+  min-height: 100vh;
+  animation: gradient 3s ease infinite;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.Input, .Output {
+  background: rgba(18, 30, 25, 0.95);
+  border: 1.5px solid #1ce783;
+  border-radius: 10px;
+  padding: 24px 26px 20px 26px;
+  width: 370px;
+  box-shadow: 0 0 18px rgba(28, 231, 131, 0.07), 0 0 2px #174924;
+}
+
+h3 {
+  color: #976109c8;
+  font-size: 1.29em;
+  font-weight: 500;
+  margin-bottom: 14px;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 4px #1ce78352;
+}
+
+.box-label {
+  font-size: 1.04em;
+  color: #824e05ca;
+  margin-bottom: 6px;
+  font-weight: 400;
+  opacity: 0.82;
+}
+
+.input-box, .output-box {
+  width: 100%;
+  min-height: 48px;
+  background: #383c3a;
+  border: 1.5px solid #1ce783;
+  color: #50fa7b;
+  border-radius: 6px;
+  font-size: 1.09em;
+  font-family: inherit;
+  padding: 11px 13px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  resize: none;
+  transition: background 0.25s, border-color 0.2s;
+}
+
+.input-box:focus {
+  outline: none;
+  background: #383a38;
+  border-color: #39ff14;
+}
+
+.output-box {
+  background: #182c24;
+  color: #09ff00;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.convert-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 32px;
+  background: linear-gradient(90deg, #0d8437 0%, #30e37b 80%);
+  color: #0f1821;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.14em;
+  text-shadow: 0 0 8px #5cffb5;
+  box-shadow: 0 0 8px #17492433;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s;
+  letter-spacing: 0.08em;
+}
+
+.convert-btn:hover {
+  background: linear-gradient(90deg, #10f46c 0%, #1cc04e 92%);
+  color: #124021;
+  box-shadow: 0 0 18px #1ce78355;
+}
+
+/* Scrollbar styles */
+textarea::-webkit-scrollbar {
+  width: 8px;
+  background: #111e15;
+}
+textarea::-webkit-scrollbar-thumb {
+  background: #20c768;
+  border-radius: 6px;
+}
+textarea:focus::-webkit-scrollbar-thumb {
+  background: #39ff14;
+}
